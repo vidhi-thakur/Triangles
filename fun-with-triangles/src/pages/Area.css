@@ -11,3 +11,17 @@
 .area-input1 {
     margin-top: 1rem;
 }
+
+.area-display {
+    margin: 3rem 0px;
+    background-color: var(--primary-color01);
+    border: 5px solid var(--primary-color02);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.image01 {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,48 @@
+.hypotenuse-component {
+    color: var(--third-color);
+    flex-direction: column;
+}
+
+.hypotenuse-triangle {
+    width: 0;
+    height: 0;
+    border-left: 70px solid var(--primary-color02);
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid var(--primary-color02);
+    border-top: 70px solid transparent;
+    margin-inline-start: 5rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.hypotenuse-input {
+    padding: 0.5rem;
+    width: 40px;
+    background-color: black;
+}
+
+.a {
+    position: absolute;
+    bottom: -90px;
+    left: -10px;
+}
+
+.b {
+    position: absolute;
+    left: -85px;
+    top: -10px;
+}
+
+.c {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.hypotenuse-form {
+    margin: 2rem 0px;
+}

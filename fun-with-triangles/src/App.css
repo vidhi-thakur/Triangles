@@ -1,38 +1,123 @@
+:root {
+  --primary-color01: #ffbe33;
+  --primary-color02: #F59E0B;
+  --secondary-color: black;
+  --third-color: whitesmoke;
+  
+}
+
+.heading {
+  color: var(--third-color);
+  margin-bottom: 2rem;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-image: url("https://img.freepik.com/free-vector/graphic-design-geometric-wallpaper_52683-34399.jpg?size=626&ext=jpg");
   min-height: 100vh;
-  display: flex;
+  display: grid;
+  place-items: center;
+}
+
+.containers {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.outer-container {
+  width: 700px;
+  background-color: var(--secondary-color);
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 700px) {
+  .outer-container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .bottom-container {
+    flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 454px) {
+  .bottom-left {
+    margin-top: 0.1rem;
+  }
+}
+
+.top-container {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid var(--primary-color01);
+  border-left: 150px solid transparent;
+  position: relative;
+}
+
+.top-container:hover {
+  border-bottom: 150px solid var(--primary-color02);
+}
+
+.hypotenuse {
+  position: absolute;
+  bottom: -100px;
+  left: -45px;
+}
+
+.bottom-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-left, .bottom-right {
+  background-color: var(--primary-color01);
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+} 
+
+.bottom-left:hover, .bottom-right:hover {
+  background-color: var(--primary-color02);
+}
+
+.area {
+  position: absolute;
+  bottom: 20px;
+  left: 45px;
+}
+
+.bottom-middle {
+  background-color: var(--primary-color01);
+  width: 300px;
+  height: 150px;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+  margin: 0.1rem;
+}
+
+.bottom-middle:hover {
+  background-color: var(--primary-color02);
+}
+
+.angles {
+  position: absolute;
+  bottom: 20px;
+  left: -100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.cursor {
+  cursor: pointer;
 }

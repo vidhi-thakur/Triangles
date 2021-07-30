@@ -10,15 +10,9 @@
     border-right: 70px solid transparent;
     border-bottom: 70px solid var(--primary-color02);
     border-top: 70px solid transparent;
-    margin-inline-start: 5rem;
+    margin-inline-start: 10rem;
     position: relative;
     margin-bottom: 5rem;
-}
-
-.hypotenuse-input {
-    padding: 0.5rem;
-    width: 40px;
-    background-color: black;
 }
 
 .a {
@@ -45,4 +39,52 @@
 
 .hypotenuse-form {
     margin: 2rem 0px;
+}
+
+.hypotenuse-button {
+    background-color: var(--primary-color01);
+    border: 1px solid var(--primary-color01);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.hypotenuse-button:hover {
+    background-color: var(--primary-color02);
+}
+
+.hypotenuse-result {
+    background-color: var(--primary-color01);
+    width: 50%;
+    margin: auto;
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 5px solid var(--primary-color02);
+}
+
+.hypotenuse-formula {
+    border-top: 1px solid var(--secondary-color);
+}
+
+.form-inner {
+    justify-content: space-between;
+}
+
+.hypo-input {
+    width: 40px;
+}
+
+.hypotenuse-input {
+    width: 60px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .hypotenuse-triangle {
+        margin-inline-start: 7.5rem;
+    }
 }

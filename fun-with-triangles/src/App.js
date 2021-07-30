@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from "react"
 import Hypotenuse from './pages/Hypotenuse';
+import Area from './pages/Area';
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
       </div>}
       {hypotenuse && <div className="flex containers outer-container">
         <Hypotenuse />
+      </div>}
+      {area && <div className="flex containers outer-container">
+        <Area />
       </div>}
     </div>
   );

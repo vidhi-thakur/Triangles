@@ -1,0 +1,13 @@
+.area-component {
+    color: var(--third-color);
+    flex-direction: column;
+    text-align: left;
+}
+
+.area-heading {
+    margin: 2rem auto;
+}
+
+.area-input1 {
+    margin-top: 1rem;
+}

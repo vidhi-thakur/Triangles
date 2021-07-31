@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+.hypotenuse-heading {
+    margin: 2rem auto;
+    border-bottom: 2px solid var(--third-color);
+    padding: 0.5rem;
+}
+
 .hypotenuse-triangle {
     width: 0;
     height: 0;
@@ -10,7 +16,7 @@
     border-right: 70px solid transparent;
     border-bottom: 70px solid var(--primary-color02);
     border-top: 70px solid transparent;
-    margin-inline-start: 10rem;
+    margin-inline-start: 8rem;
     position: relative;
     margin-bottom: 5rem;
 }
@@ -41,7 +47,7 @@
     margin: 2rem 0px;
 }
 
-.hypotenuse-button {
+.button {
     background-color: var(--primary-color01);
     border: 1px solid var(--primary-color01);
     cursor: pointer;
@@ -51,7 +57,7 @@
     margin-top: 2rem;
 }
 
-.hypotenuse-button:hover {
+.button:hover {
     background-color: var(--primary-color02);
 }
 

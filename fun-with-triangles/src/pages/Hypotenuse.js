@@ -15,7 +15,7 @@ function Hypotenuse() {
 
     return (
         <div className="hypotenuse-component flex">
-            <h2 className="mb-3">Calculate hypotenuse</h2>
+            <h2 className="hypotenuse-heading">Calculate hypotenuse</h2>
             <div className="hypotenuse-triangle">
                 <label className="a">a</label>
                 <label className="b">b</label>
@@ -28,7 +28,7 @@ function Hypotenuse() {
                 <label>b = </label>
                 <input className="hypotenuse-input" min={1} value={inputB} onChange={(e)=>setInputB(e.target.value)} type="number" required />
                 <br />
-                <button onClick={onClickHandler} className="hypotenuse-button">Submit</button>
+                <button onClick={onClickHandler} className="button">Submit</button>
             </form>
             <div className="hypotenuse-result">
                 {result? <div>c = {result}</div>:<div>C= √<span className="hypotenuse-formula">a2+b2</span></div>}

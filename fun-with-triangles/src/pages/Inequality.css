@@ -1,0 +1,68 @@
+.inequality-component {
+    color: var(--third-color);
+    flex-direction: column;
+    text-align: center;
+}
+
+.area-heading {
+    margin: 3rem auto;
+    border-bottom: 2px solid var(--third-color);
+    padding: 0.5rem;
+}
+
+.inequality-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid var(--primary-color02);
+    border-left: 190px solid transparent;
+    border-right: 100px solid transparent;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-inline-start: 1rem;
+}
+
+.inequality-a {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+}
+
+.inequality-b {
+    position: absolute;
+    top: 25px;
+    left: -100px;
+}
+
+.inequality-c {
+    position: absolute;
+    top: 30px;
+    left: 55px;
+}
+
+.inequality-form {
+    margin: 2rem 0px;
+}
+
+.inequality-input {
+    width: 60px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.area-input1 {
+    margin-top: 1rem;
+}
+
+.area-display {
+    margin: 3rem 0px;
+    background-color: var(--primary-color01);
+    border: 5px solid var(--primary-color02);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.image01 {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}

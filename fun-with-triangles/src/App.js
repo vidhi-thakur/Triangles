@@ -3,6 +3,7 @@ import { useState } from "react"
 import Hypotenuse from './pages/Hypotenuse';
 import Inequality from './pages/Inequality';
 import Angles from './pages/Angles';
+import Quiz from './pages/Quiz';
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
       </div>}
       {angles && <div className="flex containers outer-container">
         <Angles />
+      </div>}
+      {quizz && <div className="flex containers outer-container">
+        <Quiz />
       </div>}
     </div>
   );

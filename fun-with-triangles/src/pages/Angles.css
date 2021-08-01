@@ -1,3 +1,30 @@
 .angles-component {
     color: var(--third-color);
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.angles-heading {
+    margin: 3rem auto;
+    border-bottom: 2px solid var(--third-color);
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.angles-input {
+    width: 60px;
+    margin: 0px 0.5rem;
+    padding: 0.5rem;
+}
+
+.flex-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.angles-form {
+    margin: 2rem 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

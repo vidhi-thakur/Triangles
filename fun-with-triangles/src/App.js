@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from "react"
 import Hypotenuse from './pages/Hypotenuse';
 import Inequality from './pages/Inequality';
+import Angles from './pages/Angles';
 
 function App() {
 
@@ -36,6 +37,9 @@ function App() {
       </div>}
       {area && <div className="flex containers outer-container">
         <Inequality />
+      </div>}
+      {angles && <div className="flex containers outer-container">
+        <Angles />
       </div>}
     </div>
   );

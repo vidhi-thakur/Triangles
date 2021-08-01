@@ -17,8 +17,7 @@
     border-left: 190px solid transparent;
     border-right: 100px solid transparent;
     position: relative;
-    margin-bottom: 5rem;
-    margin-inline-start: 1rem;
+    margin: 5rem auto;
 }
 
 .inequality-a {
@@ -61,8 +60,10 @@
     padding: 1rem;
 }
 
-.image01 {
-    max-width: 70%;
-    display: block;
-    margin: auto;
+.inequality-result {
+    background-color: var(--primary-color01);
+    border-radius: 0.5rem;
+    border: 5px solid var(--primary-color02);
+    padding: 1rem;
+    color: var(--secondary-color);
 }

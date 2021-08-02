@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Inequality.css"
-import logo01 from "../images/logo01.png"
 
 function Inequality() {
 

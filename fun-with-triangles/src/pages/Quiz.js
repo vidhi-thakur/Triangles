@@ -25,7 +25,7 @@ function Quiz() {
             option01: "yes",
             option02: "no",
             option03: "",
-        }, 
+        },
         {
             ques_no: 4,
             question: "If a triangle has angles 25°, 75°, 80°. Is it an acute triangle?",
@@ -81,7 +81,9 @@ function Quiz() {
         <div className="quiz-component">
             {
                 array.map(item => {
-                    <Question key={item.ques_no}  ques_no={item.ques_no} question={item.question} option01={item.option01} option02={item.option02} option03={item.option03} />
+                    return (
+                        <Question key={item.ques_no} ques_no={item.ques_no} question={item.question} option01={item.option01} option02={item.option02} option03={item.option03} />
+                    )
                 })
             }
         </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Back.css"
 
-function back() {
+function back({handleBack}) {
     return (
-        <div>
-            
+        <div onClick={handleBack} className="back-button">
+            Go back
         </div>
     )
 }

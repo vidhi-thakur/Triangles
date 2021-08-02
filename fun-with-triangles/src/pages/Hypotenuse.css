@@ -1,6 +1,8 @@
 .hypotenuse-component {
     color: var(--third-color);
     flex-direction: column;
+    width: 100%;
+    padding: 1rem;
 }
 
 .hypotenuse-heading {
@@ -16,7 +18,7 @@
     border-right: 70px solid transparent;
     border-bottom: 70px solid var(--primary-color02);
     border-top: 70px solid transparent;
-    margin-inline-start: 8rem;
+    /* margin-inline-start: 8rem; */
     position: relative;
     margin: 5rem auto;
 }
@@ -77,10 +79,6 @@
 
 .form-inner {
     justify-content: space-between;
-}
-
-.hypo-input {
-    width: 40px;
 }
 
 .hypotenuse-input {

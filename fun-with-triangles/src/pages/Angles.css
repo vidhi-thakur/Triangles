@@ -20,6 +20,7 @@
 .flex-align {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .angles-form {
@@ -27,4 +28,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .input-containers {
+        margin-top: 0.5rem;
+    }
+    .flex-align {
+        flex-direction: column;
+    }
 }

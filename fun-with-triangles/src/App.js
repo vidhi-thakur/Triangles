@@ -12,6 +12,14 @@ function App() {
   const [quizz, setQuizz] = useState(false)
   const [angles, setAngles] = useState(false)
 
+  const handleBack = () => {
+    console.log("In handleback function...")
+    setAngles(false);
+    setArea(false);
+    setQuizz(false);
+    setHypotenuse(false);
+  }
+
   return (
     <div className="App">
       {(!hypotenuse && !area && !angles && !quizz) && <div className="flex containers outer-container">
@@ -34,16 +42,16 @@ function App() {
         </div>
       </div>}
       {hypotenuse && <div className="flex containers outer-container">
-        <Hypotenuse />
+        <Hypotenuse handleBack={handleBack} />
       </div>}
       {area && <div className="flex containers outer-container">
-        <Inequality />
+        <Inequality handleBack={handleBack} />
       </div>}
       {angles && <div className="flex containers outer-container">
-        <Angles />
+        <Angles handleBack={handleBack} />
       </div>}
       {quizz && <div className="flex containers outer-container">
-        <Quiz />
+        <Quiz handleBack={handleBack} />
       </div>}
     </div>
   );

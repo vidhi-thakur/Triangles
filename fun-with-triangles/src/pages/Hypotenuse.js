@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import "./Hypotenuse.css"
+import Back from '../components/Back';
 
-function Hypotenuse() {
+function Hypotenuse({ handleBack }) {
 
     const [inputA, setInputA] = useState(0);
     const [inputB, setInputB] = useState(0);
@@ -9,12 +10,13 @@ function Hypotenuse() {
 
     const onClickHandler = (e) => {
         e.preventDefault();
-        let temp = ((inputA*inputA)+(inputB*inputB))**0.5
+        let temp = ((inputA * inputA) + (inputB * inputB)) ** 0.5
         setResult(temp)
     }
 
     return (
         <div className="hypotenuse-component flex">
+            <Back handleBack={handleBack} />
             <h2 className="hypotenuse-heading">Calculate hypotenuse</h2>
             <div className="hypotenuse-triangle">
                 <label className="a">a</label>
@@ -23,15 +25,19 @@ function Hypotenuse() {
             </div>
             <p>Enter the lengths of sides of right angle triangle</p>
             <form className="hypotenuse-form">
-                <label>a = </label>
-                <input className="hypotenuse-input" min={1} value={inputA} onChange={(e)=>setInputA(e.target.value)} type="number" required />
-                <label>b = </label>
-                <input className="hypotenuse-input" min={1} value={inputB} onChange={(e)=>setInputB(e.target.value)} type="number" required />
+                <div className="input-containers">
+                    <label>a = </label>
+                    <input className="hypotenuse-input" min={1} value={inputA} onChange={(e) => setInputA(e.target.value)} type="number" required />
+                </div>
+                <div className="input-containers">
+                    <label>b = </label>
+                    <input className="hypotenuse-input" min={1} value={inputB} onChange={(e) => setInputB(e.target.value)} type="number" required />
+                </div>
                 <br />
                 <button onClick={onClickHandler} className="button">Submit</button>
             </form>
             <div className="hypotenuse-result">
-                {result? <div>c = {result}</div>:<div>C= √<span className="hypotenuse-formula">a2+b2</span></div>}
+                {result ? <div>c = {result}</div> : <div>C= √<span className="hypotenuse-formula">a2+b2</span></div>}
             </div>
         </div>
     )

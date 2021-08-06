@@ -20,7 +20,7 @@
 .flex-align {
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .angles-form {

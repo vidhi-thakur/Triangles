@@ -91,4 +91,11 @@
     .hypotenuse-triangle {
         margin-inline-start: 7.5rem;
     }
+    .inline-block {
+        display: block;
+    }
+}
+
+.inline-block {
+    display: inline;
 }

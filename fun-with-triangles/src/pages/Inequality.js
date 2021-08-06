@@ -39,19 +39,21 @@ function Inequality({ handleBack }) {
 
             <p>Enter sides of the trinagle</p>
             <form className="inequality-form">
-                <div className="input-containers">
-                    <label>a = </label>
-                    <input min={1} onChange={(e) => setInput({ ...input, inputA: e.target.value })} value={input.inputA} className="inequality-input" type="number" />
+                <div className="flex flex-align">
+                    <div className="input-containers inline-block">
+                        <label>a = </label>
+                        <input min={1} onChange={(e) => setInput({ ...input, inputA: e.target.value })} value={input.inputA} className="inequality-input" type="number" />
+                    </div>
+                    <div className="input-containers inline-block">
+                        <label>b = </label>
+                        <input min={1} onChange={(e) => setInput({ ...input, inputB: e.target.value })} value={input.inputB} className="inequality-input" type="number" />
+                    </div>
+                    <div className="input-containers inline-block">
+                        <label>c = </label>
+                        <input min={1} onChange={(e) => setInput({ ...input, inputC: e.target.value })} value={input.inputC} className="inequality-input" type="number" />
+                    </div>
                 </div>
-                <div className="input-containers">
-                    <label>b = </label>
-                    <input min={1} onChange={(e) => setInput({ ...input, inputB: e.target.value })} value={input.inputB} className="inequality-input" type="number" />
-                </div>
-                <div className="input-containers">
-                    <label>c = </label>
-                    <input min={1} onChange={(e) => setInput({ ...input, inputC: e.target.value })} value={input.inputC} className="inequality-input" type="number" />
-                </div>
-                <br />
+                
                 <button onClick={handleInequality} className="button">Submit</button>
             </form>
             <div className="inequality-result">

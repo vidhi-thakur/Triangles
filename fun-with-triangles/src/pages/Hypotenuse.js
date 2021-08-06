@@ -25,15 +25,16 @@ function Hypotenuse({ handleBack }) {
             </div>
             <p>Enter the lengths of sides of right angle triangle</p>
             <form className="hypotenuse-form">
-                <div className="input-containers">
-                    <label>a = </label>
-                    <input className="hypotenuse-input" min={1} value={inputA} onChange={(e) => setInputA(e.target.value)} type="number" required />
+                <div className="flex flex-align">
+                    <div className="input-containers inline-block">
+                        <label>a = </label>
+                        <input className="hypotenuse-input" min={1} value={inputA} onChange={(e) => setInputA(e.target.value)} type="number" required />
+                    </div>
+                    <div className="input-containers inline-block">
+                        <label>b = </label>
+                        <input className="hypotenuse-input" min={1} value={inputB} onChange={(e) => setInputB(e.target.value)} type="number" required />
+                    </div>
                 </div>
-                <div className="input-containers">
-                    <label>b = </label>
-                    <input className="hypotenuse-input" min={1} value={inputB} onChange={(e) => setInputB(e.target.value)} type="number" required />
-                </div>
-                <br />
                 <button onClick={onClickHandler} className="button">Submit</button>
             </form>
             <div className="hypotenuse-result">

@@ -4,6 +4,7 @@ import Hypotenuse from './pages/Hypotenuse';
 import Inequality from './pages/Inequality';
 import Angles from './pages/Angles';
 import Quiz from './pages/Quiz';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -40,18 +41,23 @@ function App() {
             </div>
           </div>
         </div>
+      <Footer />
       </div>}
       {hypotenuse && <div className="flex containers outer-container">
         <Hypotenuse handleBack={handleBack} />
+      <Footer />
       </div>}
       {area && <div className="flex containers outer-container">
         <Inequality handleBack={handleBack} />
+      <Footer />
       </div>}
       {angles && <div className="flex containers outer-container">
         <Angles handleBack={handleBack} />
+      <Footer />
       </div>}
       {quizz && <div className="flex containers outer-container">
         <Quiz handleBack={handleBack} />
+      <Footer />
       </div>}
     </div>
   );

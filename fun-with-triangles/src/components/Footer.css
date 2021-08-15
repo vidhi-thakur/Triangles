@@ -1,0 +1,15 @@
+.footer-links {
+    list-style: none;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer {
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+}

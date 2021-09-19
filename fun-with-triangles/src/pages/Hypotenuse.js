@@ -4,14 +4,19 @@ import Back from '../components/Back';
 
 function Hypotenuse({ handleBack }) {
 
-    const [inputA, setInputA] = useState(0);
-    const [inputB, setInputB] = useState(0);
-    const [result, setResult] = useState(0);
+    const [inputA, setInputA] = useState(null);
+    const [inputB, setInputB] = useState(null);
+    const [result, setResult] = useState(null);
 
     const onClickHandler = (e) => {
         e.preventDefault();
-        let temp = ((inputA * inputA) + (inputB * inputB)) ** 0.5
-        setResult(temp)
+        if (inputA == 0 || inputB == 0 || inputA === null || inputB === null) {
+            alert("sides should be greater or equal 1")
+            setResult(null)
+        } else {
+            let temp = ((inputA * inputA) + (inputB * inputB)) ** 0.5
+            setResult(temp)
+        }
     }
 
     return (
@@ -35,7 +40,7 @@ function Hypotenuse({ handleBack }) {
                         <input className="hypotenuse-input" min={1} value={inputB} onChange={(e) => setInputB(e.target.value)} type="number" required />
                     </div>
                 </div>
-                <button onClick={onClickHandler} className="button">Submit</button>
+                <button onClick={(e) => onClickHandler(e)} className="button">Submit</button>
             </form>
             <div className="hypotenuse-result">
                 {result ? <div>c = {result}</div> : <div>C= √<span className="hypotenuse-formula">a2+b2</span></div>}
